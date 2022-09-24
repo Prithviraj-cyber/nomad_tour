@@ -173,7 +173,7 @@
 }
 
 .w_date .form-select{
-	width: 15%;
+	width: 16%;
 }
 
 .w_date select:focus-visible{
@@ -266,6 +266,67 @@
 	margin-top: 6px;
 }
 
+.accordion-collapse{
+	border: 1px solid #ccc;
+	background-color: #fff;
+	margin-top: 10px;
+	border-radius: 20px;
+}
+
+.weather_all_details{
+	padding: 25px 30px 0px 30px;
+}
+
+.weather_all_details_left{
+	border-right: 1px solid #ccc;
+}
+
+.weather_all_details i{
+	font-size: 30px;
+	margin-right: 10px;
+	color: #33ccff;
+}
+
+.weather_all_details h2{
+	font-size: 20px;
+	font-weight: 700;
+	color: #000;
+}
+
+.weather_all_details_box{
+	margin-top: 15px;
+	list-style-type: none;
+	padding: 0;
+}
+
+.weather_all_details_box li{
+	border-bottom: 1px solid #ccc;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+
+.weather_all_details_box li:last-child{
+	border-bottom: none;
+}
+
+.weather_all_details_box li p{
+	font-size: 15px;
+	color: #4d4d4d;
+	font-weight: 500;
+	padding: 0;
+	margin: 0;
+}
+
+.weather_all_details_box li h5{
+	font-size: 15px;
+	color: #000;
+	font-weight: 500;
+	padding: 0;
+}
+
+/*input field in weather*/
 .weather_search{
 	margin-top: 15px;
 	width: 100% !important;
@@ -294,6 +355,7 @@
 .form-select:focus{
 	box-shadow: none !important;
 }
+/*input field in weather end*/
 
 /*explore section*/
 .explore{

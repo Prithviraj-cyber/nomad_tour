@@ -1,8 +1,8 @@
-const cityForm = document.querySelector(".form");
-const details = document.querySelector(".details");
-const time = document.querySelector(".time");
-const weatherIcon = document.querySelector(".icon img");
-const card = document.querySelector(".card");
+ 	const cityForm = document.querySelector(".form");
+	const details = document.querySelector(".details");
+	const time = document.querySelector(".time");
+	const weatherIcon = document.querySelector(".icon img");
+	const card = document.querySelector(".card");
 
 		const updateUI = async (data) => {
 			const { cityDetails, weather } = data;

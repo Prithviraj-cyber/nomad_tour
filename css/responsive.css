@@ -42,5 +42,21 @@
 		width: 100%;
 	}
 
+	.w_date .form-select{
+		width: 25%;
+	}
+
+
+}
+
+@media (max-width: 768px){
+
+	.w_date .form-select{
+		width: 200px;
+	}
+
+	.weather_all_details_left{
+		border-right: none;
+	}
 
 }
