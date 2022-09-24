@@ -1,0 +1,46 @@
+@media (max-width: 991px){
+	.navbar-brand{
+		width: 14%;
+		padding: 0;
+	}
+
+	.collapse{
+		margin-top: 10px;
+	}
+
+	.nav-link{
+		padding: 7px 25px !important;
+		font-size: 20px;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	.navbar-toggler:focus{
+		box-shadow: none !important;
+	}
+
+	.carousel-inner{
+		margin-top: 1.5rem;
+	}
+
+	.carousel-caption h5{
+		font-size: 20px;
+		line-height: 1.5;
+	}
+
+	.carousel-caption p{
+		top: 2rem;
+		font-size: 11px;
+		padding: 5px 15px;
+	}
+
+	.w_degree{
+		width: 100%;
+	}
+
+	.w_det{
+		width: 100%;
+	}
+
+
+}
