@@ -8,8 +8,8 @@
 					<div class="w_degree">
 						<h3>TUE<br><span>8/24</span></h3>
 						<i class="bi bi-cloud-rain-heavy-fill"></i>
-						<h3 class="deg">${weather.DailyForecasts[0].Temperature.Minimum.Value}&deg;/
-						${weather.DailyForecasts[0].Temperature.Maximum.Value}&deg;</h3>
+						<h3 class="deg">${weather.DailyForecasts[0].Temperature.Minimum.Value}&deg;F/
+						${weather.DailyForecasts[0].Temperature.Maximum.Value}&deg;F</h3>
 					</div>
 					<div class="w_det">
 						<p>${weather.Headline.Text}</p>
