@@ -1,33 +1,35 @@
- 	const cityForm = document.querySelector(".form");
-	const details = document.querySelector(".details");
-	const time = document.querySelector(".time");
-	const weatherIcon = document.querySelector(".icon img");
-	const card = document.querySelector(".card");
 
-		const updateUI = async (data) => {
-			const { cityDetails, weather } = data;
+	const details = document.getElementById("details");
 
-			details.innerHTML =`
-				<h3 class="deg">${weather.Temperature.Metric.Value}&deg;/17&deg;</h3>
-				<p>${weather.WeatherText} and humid with intervals of cloud & sun ${cityDetails.EnglishName}</p>
-			`;
+	const updateUI = async (data) => {
+	  	const { cityDetails, weather } = data;
 
-		};
+	  	details.innerHTML = `
+					<div class="w_degree">
+						<h3>TUE <br><span>8/24</span></h3>
+						<i class="bi bi-cloud-rain-heavy-fill"></i>
+						<h3 class="deg">${weather.Temperature.Metric.Value}&deg;/${weather.Temperature.Metric.Value}&deg;</h3>
+					</div>
+					<div class="w_det">
+						<p>${weather.WeatherText} and humid with intervals of cloud & sun ${cityDetails.EnglishName}</p>
+						<div class="per d-flex"><i class="bi bi-droplet"></i> <h3>28 %</h3> 
+							<button data-bs-toggle="collapse" data-bs-target="#collapseTwo1">
+								<i class="bi bi-plus-square-fill"></i>
+							</button>
+						</div>
+					</div>
+				`;
 
-		const updateCity = async (city) => {
-			const cityDetails = await getCity(city);
-			const weather = await getWeather(cityDetails.Key);
+	};
 
-			return{ cityDetails, weather };
-		};
+	async function updateCity(city) {
+	  	const cityDetails = await getCity(city);
+	  	const weather = await getWeather(cityDetails.Key);
 
-		cityForm.addEventListener("submit", (e) => {
-			e.preventDefault();
+	  	return { cityDetails, weather };
+	}
 
-			const city = cityForm.city.value.trim();
-			cityForm.reset();
-
-			updateCity(city).then((data) => updateUI(data))
-			.catch((err) => console.log(err));
-		});
-		
+	updateCity("Paris").then((data) => {
+	    updateUI(data);
+	    console.log(data);
+	}).catch((err) => console.log(err));
